@@ -166,6 +166,7 @@ def _parse_line(line: str) -> Optional[LogEntry]:
             source_format=fmt,
             raw_line=line,
         )
+    
     except (ValueError, KeyError):
         return None
 
@@ -218,6 +219,6 @@ def parse_file(filepath: str) -> ParseResult:
     return ParseResult(
         entries=entries,
         skipped_lines=skipped_lines,
-        total_lines=line_no,       # type: ignore[possibly-undefined]
+        total_lines=line_no,       
         format_counts=format_counts,
     )
