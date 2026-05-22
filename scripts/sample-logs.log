@@ -1,0 +1,46 @@
+2024-03-15T14:23:01Z 192.168.1.42 GET /api/users 200 142ms
+2024-03-15T14:23:02Z 10.0.0.7 POST /api/login 401 89ms
+2024-03-15T14:23:04Z 192.168.1.42 GET /api/users/12 200 53ms
+2024-03-15T14:23:06Z 172.16.0.5 PUT /api/profile 500 310ms
+2024-03-15T14:23:07Z 10.0.0.11 DELETE /api/posts/9 204 45ms
+
+2024/03/15 14:24:01 192.168.1.20 GET /api/products 200 0.242s
+2024/03/15 14:24:03 192.168.1.25 POST /api/cart 201 190
+2024/03/15 14:24:05 192.168.1.27 GET /api/orders 404 120ms
+2024/03/15 14:24:07 10.0.0.15 GET /api/search?q=laptop 200 0.089s
+
+15-Mar-2024 14:25:01 172.16.0.21 GET /api/dashboard 200 155ms
+15-Mar-2024 14:25:03 172.16.0.22 POST /api/payment 500 1.2s
+15-Mar-2024 14:25:04 172.16.0.23 GET /api/profile - 80ms
+15-Mar-2024 14:25:05 172.16.0.24 PATCH /api/user/15 200 92
+
+1710512581 192.168.1.42 GET /api/users 200 142ms
+1710512582 192.168.1.43 POST /api/login 403 105ms
+1710512583 192.168.1.44 GET /api/reports 200 0.315s
+
+2024-03-15T14:26:01Z 192.168.1.100 GET /api/users 200 142ms "Mozilla/5.0 Chrome"
+2024-03-15T14:26:02Z 192.168.1.101 POST /api/login 401 89ms "Mozilla Firefox"
+2024-03-15T14:26:04Z 192.168.1.102 GET /api/users/12 200 53ms "Safari Browser"
+
+{"timestamp":"2024-03-15T14:27:01Z","ip":"192.168.1.50","method":"GET","path":"/api/users","status":200,"response_time":"142ms"}
+{"timestamp":"2024-03-15T14:27:02Z","ip":"192.168.1.51","method":"POST","path":"/api/login","status":401,"response_time":"89ms"}
+{"timestamp":"2024-03-15T14:27:03Z","ip":"192.168.1.52","method":"GET","path":"/api/products","status":200,"response_time":"0.18s"}
+
+MALFORMED LINE HERE
+2024-03
+random text that makes no sense
+GET /api/users
+192.168.1.42 GET
+
+java.lang.NullPointerException
+    at server.Auth.login(Auth.java:42)
+    at server.Main.run(Main.java:10)
+
+2024-03-15T14:28:01Z 10.0.0.88 GET /api/analytics 200 900ms
+2024-03-15T14:28:03Z 10.0.0.89 POST /api/upload 500 2.4s
+2024-03-15T14:28:04Z 10.0.0.90 GET /api/recommendations 200 610ms
+2024-03-15T14:28:06Z 10.0.0.91 GET /api/notifications 404 110ms
+
+2024-03-15T14:29:01Z 192.168.1.200 GET /api/settings - 140ms
+2024-03-15T14:29:03Z 192.168.1.201 POST /api/register 201 0.220s
+2024-03-15T14:29:04Z 192.168.1.202 GET /api/home 200 75
